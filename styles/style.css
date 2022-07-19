@@ -111,6 +111,7 @@ li a{
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 30px;
     justify-items: end;
     align-items: center;
 }
@@ -118,8 +119,7 @@ li a{
     background: no-repeat url(../images/Circle\ design.svg);
     background-position: center left;
     background-size: contain;
-    height: 475px;
-    width: 475px;
+    width: 95%;
     max-width: 100%;
     object-fit: cover;
 }
@@ -129,13 +129,14 @@ li a{
 *****************/
 .brand{
     max-width: 1110px; 
+    padding-top: 50px;
 
 }
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    gap: 60px;
-    justify-items: center;
+    display: flex;
+    flex-flow: wrap row;
+    gap: 20px 60px;
+    justify-content: center;
     align-items: center;
     border-width: 1px 0px;
     border-color: rgb(192, 192, 192);
@@ -168,7 +169,7 @@ li a{
 }
 .title {
     color: #18191F;
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 600;
     line-height: 1.5em;
 }
@@ -229,6 +230,7 @@ li a{
      Fotter styles 
 ******************/
 footer{
+    max-width: 100%;
     background:#0a0826;
     color: whitesmoke;
     text-align: center;
@@ -264,4 +266,202 @@ footer p {
 }
 .social-icon:hover{
     transform: translateY(-8px);
+}
+
+/****************
+     Css Media query 
+*************/
+/*************
+    
+    Mobile Responsive 
+
+***************/
+@media only screen and (max-width:599px) {
+    .container, .hero{
+        padding: 0 10px 50px;
+    }
+    .collections .btn{
+        padding-top: 20px;
+    }
+    header{
+        display: none;
+    }
+    .hero, .products, .subscribe{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .image{
+        order: 1;
+    }
+    .text-content{
+        order: 2;
+    }
+    .headline {
+        font-size: 2em;
+    }
+    
+    .summery {
+        font-size: 1em;
+    }
+    .title {
+        font-size: 1.4em;
+    }
+    .gallery, .subscribe {
+            gap: 20px;
+        }
+        .collections .btn{
+            padding: 10px;
+            text-align: center;
+        }
+        .subscribe .summery {
+            font-size: .7em;
+        }
+        .subscribe .headline{
+            font-size: 1.5em;
+        }
+        footer h2{
+            font-size: 1em;
+        }
+        footer p {
+            
+            font-size: 10px;
+        }
+        .socials{
+            gap: 5px;
+        }
+        .social-icon{
+            font-size: 14px;
+        }
+    }
+@media only screen and (min-width:600px) and (max-width:702px) {
+    .container, .hero{
+        padding: 0 10px 50px;
+    }
+    .hero{
+        min-height: 350px;
+    }
+    .collections .btn{
+        padding: 10px;
+        text-align: left;
+    }
+    header{
+        display: none;
+    }
+    .btn a{
+        font-size: 12px;
+    }
+    .btn-arrow {
+        font-size: 10px;
+    }
+    .btn-arrow::before {
+        top: 16px;
+    }
+    .products{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .collections .btn{
+        padding: 10px;
+        text-align: left;
+    }
+    .headline {
+        font-size: 1.3em;
+    }
+    .collections .headline {
+        font-size: 1.3em;
+        padding: 0 0 30px;
+    }
+    .summery {
+        font-size: .8em;
+        padding: 6px 0;
+    }
+    .gallery{
+        gap: 10px 60px;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+    .price{
+        font-size: 1em;
+    }
+    
+    .subscribe {
+            gap: 20px;
+        }
+        .subscribe .summery {
+            font-size: .7em;
+            padding: 6px 0;
+        }
+        .subscribe .headline{
+            font-size: 1em;
+        }
+        footer h2{
+            font-size: 1em;
+        }
+        footer p {
+            
+            font-size: 10px;
+        }
+        .socials{
+            gap: 5px;
+        }
+        .social-icon{
+            font-size: 14px;
+        }
+}
+@media only screen and (min-width:703px) and (max-width:991px) {
+    .container, .hero{
+        padding: 0 15px 50px;
+    }
+    .hero{
+        min-height: 450px;
+    }
+
+    .btn a{
+        font-size: 12px;
+    }
+    .btn-arrow {
+        font-size: 10px;
+    }
+    .btn-arrow::before {
+        top: 16px;
+    }
+    .logo{
+        font-size: 1.5em;
+    }
+    ul li {
+        margin-left: 25px;
+    }
+    li a{
+        font-size: .8em;
+    }
+    
+    .headline {
+        font-size: 2em;
+    }
+    .summery {
+        font-size: .9em;
+        padding: 10px 0;
+    }
+    .gallery{
+        gap: 10px 60px;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+    .price {
+        font-size: 1em;
+    }
+    .description{
+        font-size: 12px;
+    }
+    
+    .subscribe {
+            gap: 20px;
+        }
+        .subscribe .summery {
+            font-size: .7em;
+            padding: 6px 0;
+        }
+        .subscribe .headline{
+            font-size: 1.3em;
+        }
 }

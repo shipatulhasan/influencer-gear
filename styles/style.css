@@ -46,18 +46,19 @@ img{
     margin: 20px 0;
 }
 a{
-    position: relative;
-    padding: 12px 30px;
-    background-color: #E02C6D;
-    color: whitesmoke;
-    text-decoration: none;
-    border-radius: 30px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
+    color: whitesmoke;
+    background-color: #E02C6D;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    position: relative;
 }
 .fa-arrow-right-long{
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .fa-arrow-right-long:before, .fa-long-arrow-right:before {
     content: "\f178";

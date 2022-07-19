@@ -1,0 +1,106 @@
+/***********
+     Fonts styles 
+*****************/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@500;600;700&display=swap');
+
+/*************
+     Common styles or utilities 
+*************/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1240px;
+    max-width: 100%;
+    padding: 0 20px 100px;
+}
+
+.headline{
+    color: #3a3a3a;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+.summery{
+    font-size: 1.2em;
+    color: #3a3a3a;
+    line-height: 1.5em;
+    font-weight: 500;
+    padding: 20px 0;
+}
+img{
+    width: 100%;
+}
+.btn{
+    margin: 20px 0;
+}
+a{
+    position: relative;
+    padding: 12px 30px;
+    background-color: #E02C6D;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.fa-arrow-right-long{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.fa-arrow-right-long:before, .fa-long-arrow-right:before {
+    content: "\f178";
+    top: 17px;
+    position: absolute;
+}
+
+
+/**************
+     Hero Start 
+****************/
+.hero-section .container{
+    padding-bottom:0;
+}
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: end;
+    align-items: center;
+    min-height: 100vh;
+}
+.bg-img{
+    background: no-repeat url(../images/Circle\ design.svg);
+    background-position: center left;
+    background-size: cover;
+    height: 475px;
+    width: 475px;
+    object-fit: cover;
+}
+
+/***************
+     Gallery start 
+*****************/
+.brand{
+    width: 1100px; 
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-items: center;
+    align-items: center;
+    border-width: 1px 0px;
+    border-color: rgb(192, 192, 192);
+    border-style:solid ;
+    padding: 25px 0;
+}

@@ -293,7 +293,6 @@ footer p {
     .hero, .products, .subscribe{
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
-        gap: 10px;
     }
     .image{
         order: 1;

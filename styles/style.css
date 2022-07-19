@@ -278,7 +278,11 @@ footer p {
 ***************/
 @media only screen and (max-width:688px) {
     .container, .hero{
-        padding: 0 10px 50px;
+        padding: 0 20px 50px;
+    }
+    .hero{
+        padding-top: 20px;
+        min-height: 400px;
     }
     .collections .btn{
         padding-top: 20px;
@@ -288,6 +292,8 @@ footer p {
     }
     .hero, .products, .subscribe{
         grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        gap: 10px;
     }
     .image{
         order: 1;
@@ -296,11 +302,11 @@ footer p {
         order: 2;
     }
     .headline {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     
     .summery {
-        font-size: 1em;
+        font-size: .8em;
     }
     .title {
         font-size: 1.4em;
@@ -313,7 +319,7 @@ footer p {
             text-align: center;
         }
         .subscribe .summery {
-            font-size: .7em;
+            font-size: .8em;
         }
         .subscribe .headline{
             font-size: 1.5em;

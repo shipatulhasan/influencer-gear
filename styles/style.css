@@ -1,7 +1,7 @@
 /***********
      Fonts styles 
 *****************/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
 
 /*************
      Common styles or utilities 
@@ -21,9 +21,11 @@ main {
     align-items: center;
 }
 .container{
-    width: 1240px;
-    max-width: 100%;
+    max-width: 1240px;
     padding: 0 20px 100px;
+}
+.col-2{
+    
 }
 
 .headline{
@@ -41,11 +43,12 @@ main {
 }
 img{
     width: 100%;
+    max-width: 100%;
 }
 .btn{
     margin: 20px 0;
 }
-a{
+.btn a{
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -56,11 +59,11 @@ a{
     border-radius: 30px;
     position: relative;
 }
-.fa-arrow-right-long{
+.btn-arrow{
     margin-left: 10px;
     font-size: 12px;
 }
-.fa-arrow-right-long:before, .fa-long-arrow-right:before {
+.btn-arrow::before{
     content: "\f178";
     top: 17px;
     position: absolute;
@@ -74,11 +77,11 @@ a{
     padding-bottom:0;
 }
 .hero{
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: end;
     align-items: center;
-    min-height: 100vh;
 }
 .bg-img{
     background: no-repeat url(../images/Circle\ design.svg);
@@ -86,6 +89,7 @@ a{
     background-size: cover;
     height: 475px;
     width: 475px;
+    max-width: 100%;
     object-fit: cover;
 }
 
@@ -93,15 +97,139 @@ a{
      Gallery start 
 *****************/
 .brand{
-    width: 1100px; 
+    max-width: 1110px; 
+
 }
 .gallery {
     display: grid;
     grid-template-columns: repeat(7,1fr);
+    gap: 60px;
     justify-items: center;
     align-items: center;
     border-width: 1px 0px;
     border-color: rgb(192, 192, 192);
     border-style:solid ;
     padding: 25px 0;
+}
+
+/**************
+     Collection start 
+********************/
+
+.collections .headline{
+    font-size: 2em;
+    padding: 0 0 40px;
+    text-align: center;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.product{
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.product-details{
+    padding: 10px 0 10px 5px;
+}
+.title {
+    color: #18191F;
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.price {
+    color: #18191F;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.ratings {
+    font-size: 13px;
+    color: #18191F;
+    padding: 15px 0 5px;
+}
+.ratings .filled{
+    color: #FB8200;
+}
+.description {
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5em;
+    font-family: 'Inter', sans-serif;
+}
+.collections .btn{
+    padding: 30px 0 0;
+    text-align: right;
+}
+.collections a{
+    background: none;
+    color: #E02C6D;
+    text-align: right;
+    padding: 0;
+}
+
+/**********
+     Subscription start 
+******************/
+.newsletter{
+    max-width: 1100px;
+}
+.subscribe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: stretch;
+    gap: 90px;
+}
+.subscribe .headline{
+    font-size: 1.8em;
+}
+.subscribe .summery{
+   font-size: 1em; 
+}
+
+/**********
+     Fotter styles 
+******************/
+footer{
+    background:#0a0826;
+    color: whitesmoke;
+    text-align: center;
+    padding: 40px 10px;
+}
+footer h2{
+    font-size: 1.5em;
+}
+footer p {
+    color: #b6b6b6;
+    font-size: 13px;
+    padding: 10px 0;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+.socials {
+    display: grid;
+    grid-template-columns: repeat(4,40px);
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.social-icon {
+    font-size: 18px;
+    width: 2em;
+    line-height: 2em;
+    background: #E02C6D;
+    border-radius: 30px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(131, 131, 131, 0.15);
+    transition: transform .3s ease-out;
+    -webkit-transition: transform .3s ease-out;
+}
+.social-icon:hover{
+    transform: translateY(-8px);
 }

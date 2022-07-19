@@ -24,10 +24,6 @@ main {
     max-width: 1240px;
     padding: 0 20px 100px;
 }
-.col-2{
-    
-}
-
 .headline{
     color: #3a3a3a;
     font-size: 3em;
@@ -69,6 +65,41 @@ img{
     position: absolute;
 }
 
+/**************
+ Header design 
+*******************/
+header .container {
+    padding:50px 20px 0;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #3a3a3a;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    margin-left: 34px;
+}
+li:first-child{
+    margin-left: 0;
+}
+li a{
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #3a3a3a;
+}
 
 /**************
      Hero Start 
@@ -86,7 +117,7 @@ img{
 .bg-img{
     background: no-repeat url(../images/Circle\ design.svg);
     background-position: center left;
-    background-size: cover;
+    background-size: contain;
     height: 475px;
     width: 475px;
     max-width: 100%;
@@ -146,6 +177,7 @@ img{
     font-size: 1.2em;
     font-weight: 400;
     line-height: 1.5;
+    padding: 5px 0 0;
 }
 .ratings {
     font-size: 13px;

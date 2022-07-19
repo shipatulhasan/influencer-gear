@@ -135,7 +135,7 @@ li a{
 .gallery {
     display: flex;
     flex-flow: wrap row;
-    gap: 20px 60px;
+    gap: 20px 75px;
     justify-content: center;
     align-items: center;
     border-width: 1px 0px;
@@ -311,9 +311,12 @@ footer p {
     .title {
         font-size: 1.4em;
     }
-    .gallery, .subscribe {
-            gap: 20px;
+    .gallery{
+            gap: 10px;
         }
+	.subscribe {
+		gap: 30px;
+	}
         .collections .btn{
             padding: 10px;
             text-align: center;

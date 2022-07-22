@@ -11,6 +11,7 @@
     padding: 0;
 }
 body{
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -361,6 +362,20 @@ footer p {
     .hero{
         min-height: 350px;
     }
+    .hero p{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        
+    }
+    .text-content{
+        width:500px;
+    }
+    .summery{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .collections .btn{
         padding: 10px;
         text-align: left;
@@ -388,11 +403,11 @@ footer p {
         font-size: 1.3em;
         padding: 0 0 30px;
     }
-    .summery {
+    /* .summery {
         font-size: .8em;
         padding: 6px 0;
 	text-overflow: ellipsis;
-    }
+    } */
     .gallery{
         gap: 10px 60px;
     }
